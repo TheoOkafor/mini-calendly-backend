@@ -18,9 +18,15 @@ from django.urls import path, include, re_path
 from api.user.views import (
     RetrieveUserAPIView,
     CreateUserAPIView
+
 )
+from api.bookings.views import (
+    CreateBookingsAPIView,
+)
+
 
 urlpatterns = [
   path('mentor/<int:pk>', RetrieveUserAPIView.as_view(), name='fetch-update'),
   path('user', CreateUserAPIView.as_view(), name='create'),
+  path('mentor/<int:mentor>/bookings', CreateBookingsAPIView.as_view(), name='create-booking'),
 ]

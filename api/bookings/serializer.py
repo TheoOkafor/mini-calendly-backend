@@ -4,4 +4,4 @@ from .models import Bookings
 class BookingsSerializer(serializers.ModelSerializer):
   class Meta:
     model = Bookings
-    fields = ['user_id', 'mentor', 'date_time', ]
+    fields = ['user_id', 'mentor_id', 'date_time', ]
