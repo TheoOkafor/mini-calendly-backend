@@ -1,0 +1,18 @@
+[
+  {
+    "model": "user",
+    "pk": 1,
+    "fields": {
+      "name": "Max Mustermann",
+      "time_zone": "-03:00"
+    }
+  },
+  {
+    "model": "user",
+    "pk": 2,
+    "fields": {
+      "name": "Paul McCartney",
+      "time_zone": "+01:00"
+    }
+  }
+]
