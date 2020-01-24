@@ -13,5 +13,6 @@ class Bookings(models.Model):
     default=1
   )
   date_time = models.CharField(max_length=250, null=False)
+  message = models.CharField(max_length=500, null=False)
   created_at = models.DateTimeField(default=timezone.now)
   modified_at = models.DateTimeField(default=timezone.now)

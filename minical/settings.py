@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'api.user',
     'api.openings',
     'api.bookings',
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'minical.urls'
@@ -129,9 +132,9 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'user.User'
 
 CORS_ORIGIN_WHITELIST = (
-    '0.0.0.0:3000',
-    'localhost:3000',
-    'localhost:3001',
-    'localhost:5000',
-    '127.0.0.1',
+    'http://0.0.0.0:3000',
+    'http://localhost:3000',
+    'http://localhost:3001',
+    'http://localhost:5000',
+    'http://127.0.0.1',
 )

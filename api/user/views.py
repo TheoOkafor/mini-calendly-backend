@@ -16,17 +16,17 @@ from .models import User
 LOOKUP_FIELD = 'pk'
 
 class RetrieveUserAPIView(RetrieveAPIView):
-    """Retrieve User"""
-    permission_classes = (AllowAny,)
-    serializer_class = UserSerializer
-    queryset = User.objects.all()
-    lookup_field = LOOKUP_FIELD
+  """Retrieve User"""
+  permission_classes = (AllowAny,)
+  serializer_class = UserSerializer
+  queryset = User.objects.all()
+  lookup_field = LOOKUP_FIELD
 
-    def perform_update(self, serializer):
-        """Update a business webpage."""
-        serializer.save(user=self.request.user)
+  def perform_update(self, serializer):
+    """Update a business webpage."""
+    serializer.save(user=self.request.user)
 
 class CreateUserAPIView(CreateAPIView):
-    """Create User"""
-    permission_classes = (AllowAny,)
-    serializer_class = UserSerializer
+  """Create User"""
+  permission_classes = (AllowAny,)
+  serializer_class = UserSerializer
