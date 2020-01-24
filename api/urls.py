@@ -26,7 +26,7 @@ from api.bookings.views import (
 
 
 urlpatterns = [
-  path('mentor/<int:pk>', RetrieveUserAPIView.as_view(), name='fetch-update'),
-  path('user', CreateUserAPIView.as_view(), name='create'),
+  path('mentor/<int:pk>', RetrieveUserAPIView.as_view(), name='fetch-user'),
+  path('user', CreateUserAPIView.as_view(), name='create-user'),
   path('mentor/<int:mentor>/bookings', CreateBookingsAPIView.as_view(), name='create-booking'),
 ]
