@@ -1,0 +1,18 @@
+[
+  {
+    "model": "user.user",
+    "pk": 1,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "name": "Max Mustapen",
+      "username": "",
+      "time_zone": "-03:00",
+      "created_at": "2020-01-24T10:56:44.378Z",
+      "modified_at": "2020-01-24T10:56:44.378Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

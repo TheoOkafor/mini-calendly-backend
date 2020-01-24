@@ -39,6 +39,13 @@ If you have everything set up correctly, run migrations
 python3 manage.py migrate
 ```
 
+### Seeding the Database
+```venv
+python3 manage.py loaddata user
+python3 manage.py loaddata openings
+python3 manage.py loaddata bookings
+```
+
 ### Running the app
 To run the app
 ```venv
