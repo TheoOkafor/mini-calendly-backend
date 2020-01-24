@@ -8,9 +8,8 @@ This backend has 3 models `user` (which I use to store the mentors' and users' i
 3. http://127.0.0.1:8000/api/mentor/1 - Get mentor/user
 
 #### Known Improvement Areas
-1. In the booking endpoint, I do not check whether an opening has been made available by the mentor. Also, I do not check whether the opening has been booked.
-2. Add an endpoint for creating openings.
-3. 
+1. Add an endpoint for creating openings.
+2. 
 
 ## Getting Started
 
