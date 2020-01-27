@@ -1,7 +1,7 @@
 # mini-calendly-backend
 The Django-based backend of the mini version of calendly
 ## About
-This backend has 3 models `user` (which I use to store the mentors' and users' information), `openings` (which I shall use to store the openings that the mentor has made available), and `bookings` (which I use to store the openings that the user booked).
+This backend has 3 models `user` (which I use to store the mentors' and users' information), `openings` (which I use to store the openings that the mentor has made available), and `bookings` (which I use to store the openings that the user booked).
 #### API routes
 1. http://127.0.0.1:8000/api/user - Create user
 2. http://127.0.0.1:8000/api/mentor/1/bookings - Create bookings
